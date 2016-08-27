@@ -1,0 +1,55 @@
+@heading-color: #006699;
+@paragraph-color: #009900;
+
+h1 {
+  color: @heading-color;
+  font-family: Tahoma, sans-serif;
+}
+
+p {
+  color: @paragraph-color;
+}
+
+.panel{
+  border: 3px solid dodgerblue;
+  background: lightgreen;
+  margin: 10px;
+}
+
+.little-panel{
+  .panel;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.big-panel{
+  .panel;
+  font-size: 32px;
+  padding: 20px;
+}
+
+#side-nav{
+  background: #333;
+
+  a:link, a:visited{
+    color: white;
+    display: block;
+    padding: 8px;
+  }
+
+  a:hover{
+    background: #777;
+  }
+}
+
+#welcome-banner{
+  font-size: 32px;
+  background: lightgreen;
+
+  @media screen {
+    @media (max-width: 768px) {
+      font-size: 18px;
+      background:  lightsteelblue;
+    }
+  }
+}
